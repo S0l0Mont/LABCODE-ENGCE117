@@ -37,7 +37,7 @@ int main() {
   LinkedList listA ;
   int menu ;
   readfile( &listA ) ;
-  printf( "  Menu - (1) Add (2) Edit (3) Delete (4) Find (5) Show (0) Edit : " ) ;
+  printf( "Menu - (1) Add (2) Edit (3) Delete (4) Find (5) Show (0) Edit : " ) ;
   scanf( "%d", &menu ) ;
   while( menu != 0 ) {
     switch( menu ) {
@@ -47,7 +47,7 @@ int main() {
       case 4 : FindData( &listA ) ; break ;
       case 5 : listA.ShowAll() ; break ;
     }//end switch
-  printf( "  Menu - (1) Add (2) Edit (3) Delete (4) Find (5) Show (0) Edit : " ) ;
+  printf( "Menu - (1) Add (2) Edit (3) Delete (4) Find (5) Show (0) Edit : " ) ;
   scanf( "%d", &menu ) ;
   }//end while
   writefile( &listA ) ;
